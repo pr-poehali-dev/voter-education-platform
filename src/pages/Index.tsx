@@ -11,6 +11,20 @@ import {
 const HERO_IMG =
   'https://cdn.poehali.dev/projects/b8f49a6b-46f5-4fa7-8bd3-e4fb0feff6b7/files/8e237d1f-6b64-485a-ae3f-003e1d80f99b.jpg';
 
+const LOGO_GERB =
+  'https://cdn.poehali.dev/projects/b8f49a6b-46f5-4fa7-8bd3-e4fb0feff6b7/bucket/9c9d4761-c1fe-4f30-bcd6-788e6a0a828c.jpg';
+const LOGO_CBS =
+  'https://cdn.poehali.dev/projects/b8f49a6b-46f5-4fa7-8bd3-e4fb0feff6b7/bucket/5fd5c257-ed0f-4a79-87e9-c8bba76858ca.jpg';
+const LOGO_LIB =
+  'https://cdn.poehali.dev/projects/b8f49a6b-46f5-4fa7-8bd3-e4fb0feff6b7/bucket/bf8597c6-4ac6-46da-8159-9697f8edde3e.jpg';
+
+const CONTACTS = [
+  { icon: 'Globe', label: 'kitap.tatar.ru', href: 'http://kitap.tatar.ru/ru/site/42317037/' },
+  { icon: 'Phone', label: '(85557) 7-83-26', href: 'tel:+78555778326' },
+  { icon: 'Mail', label: 'elabuga.cbs@tatar.ru', href: 'mailto:elabuga.cbs@tatar.ru' },
+  { icon: 'MapPin', label: '423600 РТ, г. Елабуга, ул. Казанская, 15', href: null },
+];
+
 const NAV = [
   { id: 'first', label: 'Голосую впервые' },
   { id: 'law', label: 'Правовой минимум' },
@@ -83,6 +97,48 @@ const Index = () => {
 
   return (
     <div className="min-h-screen font-body text-ink overflow-x-hidden">
+      {/* ORG TOP BAR */}
+      <div className="bg-white border-b-4 border-ink">
+        <div className="container py-4">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8">
+            <div className="flex items-center gap-4 shrink-0">
+              <img src={LOGO_GERB} alt="Герб Елабуги" className="h-16 w-auto object-contain" />
+              <img src={LOGO_CBS} alt="Логотип ИБС" className="h-14 w-auto object-contain" />
+              <img src={LOGO_LIB} alt="Центральная библиотека имени А. С. Пушкина" className="h-16 w-auto object-contain" />
+            </div>
+            <div className="lg:border-l-2 lg:border-ink/15 lg:pl-8 flex-1">
+              <p className="font-display uppercase leading-tight text-ink text-sm sm:text-base">
+                МБУ «Централизованная библиотечная система Елабужского муниципального района»
+              </p>
+              <p className="font-hand text-2xl text-coral leading-none mt-0.5">
+                Центральная библиотека имени А. С. Пушкина
+              </p>
+              <div className="flex flex-wrap gap-x-5 gap-y-1 mt-2 text-sm text-ink/70">
+                {CONTACTS.map((c, i) =>
+                  c.href ? (
+                    <a
+                      key={i}
+                      href={c.href}
+                      target={c.href.startsWith('http') ? '_blank' : undefined}
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 hover:text-coral transition-colors"
+                    >
+                      <Icon name={c.icon} size={15} className="text-coral shrink-0" />
+                      {c.label}
+                    </a>
+                  ) : (
+                    <span key={i} className="inline-flex items-center gap-1.5">
+                      <Icon name={c.icon} size={15} className="text-coral shrink-0" />
+                      {c.label}
+                    </span>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* NAV */}
       <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b-4 border-ink">
         <div className="container flex items-center justify-between h-16">

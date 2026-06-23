@@ -392,19 +392,23 @@ const Index = () => {
                 <Icon name="ArrowUpRight" size={20} className="ml-auto" />
               </a>
               <a
-                href="mailto:elabuga.cbs@tatar.ru"
+                href="https://vk.com/biblioteki_elabugi?ysclid=mqqgl9jrxv277975968"
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors cursor-pointer"
               >
-                <Icon name="Mail" size={22} className="text-mint" />
-                <span className="font-display uppercase">elabuga.cbs@tatar.ru</span>
+                <Icon name="MessageCircle" size={22} className="text-mint" />
+                <span className="font-display uppercase">Сообщество VK</span>
                 <Icon name="ArrowUpRight" size={20} className="ml-auto" />
               </a>
               <a
-                href="tel:+78555778326"
+                href="https://web.max.ru/-69844069883923"
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors cursor-pointer"
               >
-                <Icon name="Phone" size={22} className="text-mint" />
-                <span className="font-display uppercase">(85557) 7-83-26</span>
+                <Icon name="Send" size={22} className="text-mint" />
+                <span className="font-display uppercase">Мессенджер МАХ</span>
                 <Icon name="ArrowUpRight" size={20} className="ml-auto" />
               </a>
               <div className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4">

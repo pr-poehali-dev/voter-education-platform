@@ -381,21 +381,36 @@ const Index = () => {
               видео в наших каналах.
             </p>
             <div className="grid gap-3">
-              <a className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors">
-                <Icon name="MessageCircle" size={22} className="text-mint" />
-                <span className="font-display uppercase">Сообщество VK</span>
+              <a
+                href="http://kitap.tatar.ru/ru/site/42317037/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors cursor-pointer"
+              >
+                <Icon name="Globe" size={22} className="text-mint" />
+                <span className="font-display uppercase">Сайт библиотеки</span>
                 <Icon name="ArrowUpRight" size={20} className="ml-auto" />
               </a>
-              <a className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors">
-                <Icon name="Send" size={22} className="text-mint" />
-                <span className="font-display uppercase">Мессенджер МАХ</span>
-                <Icon name="ArrowUpRight" size={20} className="ml-auto" />
-              </a>
-              <a className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors">
+              <a
+                href="mailto:elabuga.cbs@tatar.ru"
+                className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors cursor-pointer"
+              >
                 <Icon name="Mail" size={22} className="text-mint" />
-                <span className="font-display uppercase">Написать нам</span>
+                <span className="font-display uppercase">elabuga.cbs@tatar.ru</span>
                 <Icon name="ArrowUpRight" size={20} className="ml-auto" />
               </a>
+              <a
+                href="tel:+78555778326"
+                className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4 hover:border-mint transition-colors cursor-pointer"
+              >
+                <Icon name="Phone" size={22} className="text-mint" />
+                <span className="font-display uppercase">(85557) 7-83-26</span>
+                <Icon name="ArrowUpRight" size={20} className="ml-auto" />
+              </a>
+              <div className="flex items-center gap-3 bg-cream/5 border-2 border-cream/20 rounded-2xl px-5 py-4">
+                <Icon name="MapPin" size={22} className="text-mint shrink-0" />
+                <span className="font-display uppercase text-sm leading-tight">423600 РТ, г. Елабуга, ул. Казанская, 15</span>
+              </div>
             </div>
           </div>
         </div>
